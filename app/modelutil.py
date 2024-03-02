@@ -7,3 +7,4 @@ def load_model() -> Sequential:
 
     model = Sequential()
     model.add(Conv3D(128, 3, input_shape=(75, 46, 140, 1), padding='same'))
+    model.add(Activation('relu'))
